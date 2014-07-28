@@ -7,4 +7,4 @@ if [ ! -d /tmp/zookeeper ]; then
     echo $1 > /tmp/zookeeper/myid
 fi
 # echo starting zookeeper 
-/usr/local/kafka-0.8.0/bin/zookeeper-server-start.sh /vagrant/config/zookeeper.properties > /tmp/zookeeper.log &
+/vagrant/kafka_2.9.2-0.8.1.1/bin/zookeeper-server-start.sh /vagrant/config/zookeeper.properties > /tmp/zookeeper.log &
